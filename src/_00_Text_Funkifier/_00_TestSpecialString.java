@@ -37,7 +37,10 @@ public class _00_TestSpecialString {
 	//   new String you want. Then use the assertEquals method in
 	//   the JUnitTest case below to test your customized Special String.
 	@Test
-	public void testCustomString() {
-	
+	public void testCustomString()  {
+		SpecialString crazy = new CustomString("This is a very epic test");
+		System.out.println(crazy);
+		assertEquals("THis Is A veRY ePIc TEst", crazy.toString());
+		
 	}
 }
